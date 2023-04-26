@@ -1,0 +1,222 @@
+*{
+    margin:0px;
+    
+}
+.body {
+    width: 480px;
+    height: 1200px;
+}
+@media screen and (max-width:780px) and (min-width:480px){
+    .complete{
+        width: 100%;
+    }
+    .extra{
+        width: 600px;
+    }
+    .child{
+        flex-grow: 200px;
+    }
+    .border{
+        grid-template-columns: 600px;
+        position: relative;
+        width: 600px;
+    }
+}
+@media screen and (min-width:780px){
+    .complete{
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    /* body{
+        width: 100%;
+        height: 500px;
+    } */
+    .complete{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .body{
+        background-size: cover;
+        width: 360px;
+    }
+    .border{
+        border: 4px solid black;
+        height: 848px;
+        width: 340px;
+        border-bottom: none;
+        box-sizing: border-box;
+        position: relative;
+        top: 0px;
+        left:0px;
+    }
+    #child-2{
+        font-size: 14px;
+    }
+    .extra{
+    width: 340px;
+    height: 600px;
+    background-color: rgb(95, 207, 95);
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    color: white;
+    box-sizing: border-box;
+    padding: 40px;
+    position: relative;
+    }
+    
+}
+.complete{
+    width: 460px;
+    display: flex;
+    justify-content: stretch;
+    box-sizing: border-box;
+}
+small{
+    color: red;
+    font-size: 15px;
+}
+.border{
+    border: 4px solid black;
+    height: 848px;
+    width: 460px;
+    border-bottom: none;
+    box-sizing: border-box;
+    position: relative;
+    display: grid;
+    grid-template-columns: 480px;
+    grid-template-rows: 128px 700px;
+    box-sizing: border-box;
+}
+.main{
+    width: 452px;
+    position: relative;
+    left: -4px;
+}
+.child{
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+}
+#child-1{
+    display: flex;
+    flex-direction: column;
+}
+#child-1-1{
+    width: 452px;
+    height: 80px;
+    background-color: darkslategrey;
+    box-sizing: border-box;
+}
+h1{
+    margin: 20px;
+    color: #00f3ff;
+}
+#child-1-2{
+    width: 452px;
+    height: 40px;
+    background-color: #7dbfdf;
+    text-align:left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#child-2{
+    box-sizing: border-box;
+    display: grid;
+}
+#child-2 {
+    display: grid;
+    grid-template-columns: 226px 226px;
+    grid-auto-rows: 700px;
+    box-sizing: border-box;
+    font-size: 15px;
+    position: relative;
+    left: 4px;
+}
+.child-2{
+    box-sizing: border-box;
+    padding: 0px;
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: 40px 70px 40px 145px 40px 40px 40px 240px 50px;
+    background-color: white;
+}
+.child-2-1,.child-2-2{
+    background-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: left;
+    line-height: 130%;
+}
+#child-2-1-2,#child-2-2-2{
+    display: grid;
+    grid-template-rows: repeat(4,35px);
+    background-color: white;
+    box-sizing: border-box;
+}
+.address{
+    background-color: white;
+    box-sizing: border-box;
+}
+input{
+    height: 14px;
+    background-color: rgba(0, 0, 0, 0.123);
+    border-radius: 4px;
+}
+input[type="radio"]{
+    height: 12px;
+    width: 12px;
+    border-radius: 5px;
+    accent-color: rgb(6, 250, 67);
+}
+input[type="radio"]:hover:before{
+    box-shadow: 0px 0px 8px rgb(123, 123, 212);
+    border-radius: 6px;
+} 
+#child-2-2-9 button{
+    position: relative;
+    top: 35%;
+    height: 25px;
+    width: 140px;
+    transition: width 1s;
+    justify-content: center;
+    box-shadow: 4px 4px 8px rgba(3, 121, 175, 0.842);
+    background-color: rgb(3, 122, 177);
+}
+#child-2-2-9 button:hover{
+    width: 147px;
+    height: 26.25px;
+    background-color: #7dbfdf;
+}
+#child-2-2-9 button:active{
+    width: 147px;
+    height: 26.25px;
+    background-color: rgb(20, 150, 85);
+}
+.extra{
+    width: 460px;
+    height: 848px;
+    background-color: rgb(95, 207, 95);
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    color: white;
+    box-sizing: border-box;
+    padding: 30px;
+    position: relative;
+}
+.extra h1{
+    color: white;
+}
+p{
+    font-size: 16px;
+    color: white;
+    display: inline;
+    text-align: justify;
+}
+img{
+    width: 40px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+}
